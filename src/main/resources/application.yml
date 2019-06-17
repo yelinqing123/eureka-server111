@@ -1,0 +1,24 @@
+server:  
+   port: 10086  
+spring: 
+    application:  
+        name: doga-registry
+
+eureka:     
+    environment: dev   
+    datacenter: keeko   
+    instance:  
+       prefer-ip-address: true  
+       hostname: 192.168.249.54  
+    server:    
+       enable-self-preservation: false  
+       eviction-interval-timer-in-ms: 5000  
+    client:  
+      service-url:  
+         defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    
+      fetch-registry: false  
+      register-with-eureka: false
+
+logging:
+  level:
+    com.netflix: Error
