@@ -7,8 +7,10 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
+    <groupId>com.keeko.doga</groupId>
 	<artifactId>doga-registry</artifactId>
-
+	<version>1.0.0-SNAPSHOT</version>
+	
 	<dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
